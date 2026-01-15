@@ -25,7 +25,7 @@
 
         <div class="relative">
             
-            <div id="portfolio-track" class="flex gap-6 transition-transform duration-700 ease-out will-change-transform py-4">
+            <div? id="portfolio-track" class="flex gap-6 transition-transform duration-700 ease-out will-change-transform py-4">
                 
                 <div class="w-full md:w-[calc(33.333%-16px)] flex-shrink-0 relative group cursor-pointer">
                     <div class="rounded-2xl overflow-hidden h-[450px] relative shadow-md">
@@ -87,12 +87,6 @@
                     </div>
                 </div>
 
-            </div>
-
-            <div class="flex justify-center gap-2 mt-10">
-                <div class="h-1.5 w-8 bg-[#ea580c] rounded-full"></div>
-                <div class="h-1.5 w-2 bg-gray-300 rounded-full"></div>
-                <div class="h-1.5 w-2 bg-gray-300 rounded-full"></div>
             </div>
 
         </div>

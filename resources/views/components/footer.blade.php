@@ -46,11 +46,11 @@
             <div>
                 <h3 class="text-white text-lg font-bold mb-6">Quick Links</h3>
                 <ul class="space-y-4">
-                    <li><a href="#" class="hover:text-orange-600 transition-colors duration-300">Home</a></li>
-                    <li><a href="#" class="hover:text-orange-600 transition-colors duration-300">About Us</a></li>
-                    <li><a href="#" class="hover:text-orange-600 transition-colors duration-300">Services</a></li>
-                    <li><a href="#" class="hover:text-orange-600 transition-colors duration-300">Portfolio</a></li>
-                    <li><a href="#" class="hover:text-orange-600 transition-colors duration-300">Contact</a></li>
+                    <li><a href="" class="hover:text-orange-600 transition-colors duration-300">Home</a></li>
+                    <li><a href="about" class="hover:text-orange-600 transition-colors duration-300">About Us</a></li>
+                    <li><a href="services" class="hover:text-orange-600 transition-colors duration-300">Services</a></li>
+                    <li><a href="portfolio" class="hover:text-orange-600 transition-colors duration-300">Portfolio</a></li>
+                    <li><a onclick="openModal()"  class="hover:text-orange-600 transition-colors duration-300">Contact</a></li>
                 </ul>
             </div>
 
