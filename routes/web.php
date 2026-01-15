@@ -16,6 +16,7 @@ Route::view('/portfolio','components.portfolio');
 Route::post('/admin/reply', [MailController::class, 'sendReply'])->name('admin.sendReply');
 Route::get('/admin/messages', [MailController::class, 'viewMessages'])->name('admin.messages');
 // Route::view('/','components.header');
+Route::view('/test-whatsapp', 'test-whatsapp');
 Route::post('/send-whatsapp', [MailController::class, 'sendWhatsApp'])->name('send.whatsapp');
 
 Route::post('send-mail',[MailController::class,'mailApp']);
