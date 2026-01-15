@@ -56,4 +56,41 @@ class MailController extends Controller
     Mail::to($email)->send(new mailReply($msg, $sub, $name, $email)); 
     return back()->with('success', 'Reply sent successfully to ' . $email);
 }
+
+public function sendWhatsApp(Request $request)
+    {
+        // 1. Validate Input
+        $request->validate([
+            'phone' => 'required', // Format must be like +1234567890
+            'message' => 'required'
+        ]);
+
+        // 2. Load Credentials
+        $sid    = env('TWILIO_SID');
+        $token  = env('TWILIO_AUTH_TOKEN');
+        $from   = "whatsapp:" . env('TWILIO_WHATSAPP_FROM'); // Twilio requires "whatsapp:" prefix
+
+        // 3. Format Recipient (Ensure it has "whatsapp:" prefix)
+        // If the user inputs "+919876543210", we make it "whatsapp:+919876543210"
+        $to = "whatsapp:" . $request->phone; 
+
+        try {
+            // 4. Send Message
+            $twilio = new Client($sid, $token);
+            
+            $twilio->messages->create(
+                $to, 
+                [
+                    "from" => $from,
+                    "body" => $request->message
+                ]
+            );
+
+            return back()->with('success', 'WhatsApp message sent successfully!');
+
+        } catch (\Exception $e) {
+            // Handle Error
+            return back()->with('error', 'Error sending WhatsApp: ' . $e->getMessage());
+        }
+    }
 }
