@@ -43,13 +43,17 @@ class MailController extends Controller
     }
     
     public function sendReply(Request $request){
-        $request->validate([
-            'email' => 'required|email',
-            'reply_message' => 'required'
-        ]);
-        $to = $request->email;
-        $subject = "Re: " . $request->original_subject;
-        return back()->with('success', value: 'Reply sent successfully to ' . $to);
-        Mail::to($to)->send(new mailReply($msg, $sub, $name, $email)); 
-    }
+    $request->validate([
+        'email' => 'required|email',
+        'reply_message' => 'required'
+    ]);
+    
+    $email = $request->email;
+    $msg = $request->reply_message;
+    $sub = "Re: " . $request->original_subject;
+    $name = "Client"; 
+
+    Mail::to($email)->send(new mailReply($msg, $sub, $name, $email)); 
+    return back()->with('success', 'Reply sent successfully to ' . $email);
+}
 }

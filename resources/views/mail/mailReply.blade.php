@@ -18,7 +18,7 @@
             </div>
 
             <p>Best Regards,<br>
-            <strong>AMIT.DEV Team</strong></p>
+            <strong>ABC Studio</strong></p>
         </div>
     </div>
 
