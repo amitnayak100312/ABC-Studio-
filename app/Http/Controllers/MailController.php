@@ -4,8 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail; 
-use App\Mail\mailApp; 
-use App\Models\MailEntry; 
+use App\Mail\mailApp;
+use App\Mail\mailReply;
+use App\Models\MailEntry;
 
 class MailController extends Controller
 {
@@ -48,6 +49,7 @@ class MailController extends Controller
         ]);
         $to = $request->email;
         $subject = "Re: " . $request->original_subject;
-        return back()->with('success', 'Reply sent successfully to ' . $to);
+        return back()->with('success', value: 'Reply sent successfully to ' . $to);
+        Mail::to($to)->send(new mailReply($msg, $sub, $name, $email)); 
     }
 }

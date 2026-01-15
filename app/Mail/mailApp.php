@@ -46,7 +46,7 @@ class mailApp extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'mail.mallApp',
+            view: 'mail.mallReply',
         );
     }
 
