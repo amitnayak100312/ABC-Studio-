@@ -35,3 +35,4 @@ Route::view('/services','components.services');
 Route::view('/portfolio','components.portfolio');
 
 //WhatsApp Messages
+Route::get('/send-whatsapp-message',);
