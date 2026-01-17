@@ -19,11 +19,11 @@ class WhatsAppController extends Controller
             $clientnumber, // to
     [
         "from" => 'whatsapp:'.$clientnumber,
-          "body" => $messges
+          "body" => $messges,
     ]
       );
     
-      return response()->json(['message' => 'Whatsapp Message to done'])
+      return response()->json(['message' => 'Whatsapp Message to done']);
       
     }
 }
