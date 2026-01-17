@@ -17,8 +17,5 @@
             </button>    
         </div>
     </nav>
-    
-    
-    
     @include('components.model')
     

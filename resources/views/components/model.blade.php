@@ -79,24 +79,14 @@
 
 
 @if(session('success'))
-    <div id="success-toast" class="fixed top-5 right-5 z-50 flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500 bg-white divide-x divide-gray-200 rounded-lg shadow dark:text-gray-400 dark:divide-gray-700 space-x dark:bg-gray-800" role="alert">
-        <div class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-green-500 bg-green-100 rounded-lg dark:bg-green-800 dark:text-green-200">
-            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-            </svg>
-            <span class="sr-only">Check icon</span>
+        <div id="success-toast" class="fixed bottom-5 right-5 z-50 flex items-center p-4 text-gray-500 bg-white border-l-4 border-green-500 rounded shadow-2xl animate-bounce" role="alert">
+            <div class="text-green-500 mr-3">
+                <i class="fa-solid fa-circle-check text-xl"></i>
+            </div>
+            <div class="text-sm font-medium text-gray-800">{{ session('success') }}</div>
         </div>
-        
-        <div class="pl-4 text-sm font-normal text-gray-500 dark:text-white">{{ session('success') }}</div>
-        
-        {{-- <div class="pl-4 text-sm font-normal text-gray-800">{{ session('success') }}</div> --}}
-        <button type="button" class="ml-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex items-center justify-center h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700" data-dismiss-target="#toast-success" aria-label="Close" onclick="document.getElementById('success-toast').remove()">
-            <span class="sr-only">Close</span>
-            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-            </svg>
-        </button>
-    </div>
+    @endif
+
 
     <script>
         setTimeout(() => {
@@ -106,9 +96,8 @@
                 toast.style.opacity = "0";
                 setTimeout(() => toast.remove(), 500);
             }
-        }, 4000); // 4000 milliseconds = 4 seconds
+        }, 4000);
     </script>
-@endif
 
 
 <script>
