@@ -16,6 +16,7 @@
                     </tr>
                 </thead>
                 <tbody>
+                    
                     @foreach($msgreview as $msg)
                     <tr>
                         <td>{{ $msg->created_at->format('M d, Y') }}</td>
@@ -25,11 +26,6 @@
                         </td>
                         <td>{{ $msg->service_type }}</td>
                         <td>{{ Str::limit($msg->message, 40) }}</td>
-                        <td>
-                            <button class="btn-reply" onclick="openReplyModal('{{ $msg->email }}', '{{ $msg->subject }}')">
-                                Reply
-                            </button>
-                        </td>
                     </tr>
                     @endforeach
                     
