@@ -18,7 +18,7 @@
 <body class="bg-gray-50">
 
     @include('components.header')
-
+    <br><br>
     <section class="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
         <div class="max-w-7xl w-full space-y-8">
 
