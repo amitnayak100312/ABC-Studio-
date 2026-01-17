@@ -32,7 +32,7 @@
                     </tr>
                     @endforeach
                     
-                    @if($messages->isEmpty())
+                    @if($msgreview->isEmpty())
                     <tr>
                         <td colspan="5" style="text-align: center; padding: 30px; color: #999;">
                             No messages found.
