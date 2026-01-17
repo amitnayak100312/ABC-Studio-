@@ -162,6 +162,108 @@
             .main-content { margin-left: 60px; padding: 15px; }
             .modal-content { width: 90%; }
         }
+        
+        /* --- ADD CONTENT FORM STYLES --- */
+
+/* Title styling */
+.card-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f0f0f0;
+}
+.card-title i {
+    color: var(--primary-orange);
+    margin-right: 10px;
+}
+
+/* Form Grid System */
+.form-row {
+    display: flex;
+    gap: 20px; /* Space between columns */
+    margin-bottom: 15px;
+}
+
+/* Form Group */
+.form-group {
+    flex: 1; /* Makes inputs take equal width */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Full Width for Message/Image */
+.full-width {
+    flex: 100%;
+}
+
+/* Labels */
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+/* Inputs & Selects */
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    background: #fafafa;
+}
+
+.form-group textarea {
+    height: 120px; /* Taller for description */
+    resize: vertical;
+}
+
+/* Focus Effect */
+.form-group input:focus, 
+.form-group select:focus, 
+.form-group textarea:focus {
+    border-color: var(--primary-orange);
+    background: #fff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 107, 0, 0.1);
+}
+
+/* Save Button */
+.btn-save {
+    background-color: var(--primary-orange);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn-save:hover {
+    background-color: #e65100; /* Darker Orange */
+}
+
+/* Mobile Responsiveness for Form */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column; /* Stack inputs on mobile */
+        gap: 0;
+    }
+    .form-group {
+        margin-bottom: 15px;
+    }
+}
     </style>
 </head>
 
