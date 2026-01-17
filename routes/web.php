@@ -13,8 +13,6 @@ Route::get('/', function () {
 
 
 // Route::view('/','components.header');
-
-
 //all controller
 Route::get('/viewClient', [MailController::class, 'viewMessages'])->name('view.client');
 Route::get('/viewreview', [MailController::class, 'viewReview']);
