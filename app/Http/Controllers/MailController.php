@@ -55,11 +55,11 @@ class MailController extends Controller
         return view('back-end.viewClient', compact('messages'));
     }
 
-    public function viewReview()
-    {
-        $msgreview = Review::orderBy('created_at', 'desc')->get();
-        return view('back-end.viewreview', compact('msgreview'));
-    }
+    // public function viewReview()
+    // {
+    //     $msgreview = Review::orderBy('created_at', 'desc')->get();
+    //     return view('back-end.viewreview', compact('msgreview'));
+    // }
     public function sendReply(Request $request)
     {
         $request->validate([

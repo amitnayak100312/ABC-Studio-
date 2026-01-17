@@ -18,7 +18,7 @@ Route::view('/addContent','back-end.addContent');
 Route::view('/dashboard','back-end.dashboard');
 Route::view('/viewreview','back-end.viewreview');
 Route::get('/viewClient', [MailController::class, 'viewMessages'])->name('view.client');
-Route::get('/viewClient', [MailController::class, 'viewReview']);
+Route::get('/viewreview', [MailController::class, 'viewReview']);
 Route::view('/review', 'components.review');
 Route::view('/contact','components.contact');
 Route::view('/about','components.aboutus2');
