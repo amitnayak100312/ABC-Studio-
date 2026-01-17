@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
     </style>
 </head>
+
 <body class="bg-gray-50">
 
     @include('components.header')
@@ -24,14 +29,22 @@
                         Let’s build something <br> <span class="text-orange-600">extraordinary.</span>
                     </h2>
                     <p class="text-lg text-gray-600 mb-10">
-                        Whether you need a brand overhaul, a custom IT solution, or a digital marketing push, our team is ready to help you scale.
+                        Whether you need a brand overhaul, a custom IT solution, or a digital marketing push, our team
+                        is ready to help you scale.
                     </p>
 
                     <div class="space-y-6">
                         <div class="flex items-start">
                             <div class="flex-shrink-0">
-                                <div class="flex items-center justify-center h-12 w-12 rounded-full bg-orange-100 text-orange-600">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
+                                <div
+                                    class="flex items-center justify-center h-12 w-12 rounded-full bg-orange-100 text-orange-600">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                                    </svg>
                                 </div>
                             </div>
                             <div class="ml-4">
@@ -41,8 +54,13 @@
                         </div>
                         <div class="flex items-start">
                             <div class="flex-shrink-0">
-                                <div class="flex items-center justify-center h-12 w-12 rounded-full bg-orange-100 text-orange-600">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg>
+                                <div
+                                    class="flex items-center justify-center h-12 w-12 rounded-full bg-orange-100 text-orange-600">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                                    </svg>
                                 </div>
                             </div>
                             <div class="ml-4">
@@ -51,12 +69,29 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <div
+                                class="flex items-center justify-center h-12 w-12 rounded-full bg-orange-100 text-orange-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-bold text-gray-900">Call Us</h3>
+                            <p class="mt-1 text-gray-600">+91 7904579938</p>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="bg-white rounded-2xl shadow-xl p-9 sm:p-12 border-t-4 border-orange-600">
                     <form action="send-mail" method="POST" class="space-y-6">
                         @csrf
-                        
+
                         @if ($errors->any())
                             <div class="bg-red-50 border-l-4 border-red-500 text-red-700 p-4 mb-4" role="alert">
                                 <p class="font-bold">Whoops!</p>
@@ -96,8 +131,10 @@
                                 <option value="" disabled selected>Choose a service...</option>
                                 <option value="digital-marketing" {{ old('service') == 'digital-marketing' ? 'selected' : '' }}>Digital Marketing</option>
                                 <option value="content-writing" {{ old('service') == 'content-writing' ? 'selected' : '' }}>Content Writing</option>
-                                <option value="graphic-design" {{ old('service') == 'graphic-design' ? 'selected' : '' }}>Graphic Design</option>
-                                <option value="web-design" {{ old('service') == 'web-design' ? 'selected' : '' }}>Web Design</option>
+                                <option value="graphic-design" {{ old('service') == 'graphic-design' ? 'selected' : '' }}>
+                                    Graphic Design</option>
+                                <option value="web-design" {{ old('service') == 'web-design' ? 'selected' : '' }}>Web
+                                    Design</option>
                             </select>
                         </div>
 
@@ -118,15 +155,20 @@
             </div>
         </div>
     </section>
-    
+
     @include('components.footer')
-    
+
 
     @if(session('success'))
-        <div id="success-toast" class="fixed top-5 right-5 z-50 flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500 bg-white divide-x divide-gray-200 rounded-lg shadow space-x" role="alert">
-            <div class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-green-500 bg-green-100 rounded-lg">
-                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+        <div id="success-toast"
+            class="fixed top-5 right-5 z-50 flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500 bg-white divide-x divide-gray-200 rounded-lg shadow space-x"
+            role="alert">
+            <div
+                class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-green-500 bg-green-100 rounded-lg">
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                    viewBox="0 0 20 20">
+                    <path
+                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                 </svg>
             </div>
             <div class="pl-4 text-sm font-normal text-gray-500">{{ session('success') }}</div>
@@ -144,4 +186,5 @@
     @endif
 
 </body>
+
 </html>
