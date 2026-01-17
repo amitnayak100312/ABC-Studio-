@@ -13,18 +13,16 @@ class WhatsAppController extends Controller
         $twilioNumber = env('TWILIO_WHATSAPP_FROM');
         $clientnumber = 'whatsapp:+918980785634';
         $messges = "Hello Cheking msg";
-        $twilio = new Client($sid, $token);
+        $twilio = new Client($twilioSid, $token);
         
          $message = $twilio->messages
       ->create("whatsapp:+918980785634", // to
         array(
           "from" => 'whatsapp:'.$clientnumber,
-          "contentSid" => "HXb5b62575e6e4ff6129ad7c8efe1f983e",
-          "contentVariables" => "{"1":"12/1","2":"3pm"}",
-          "body" => "Your Message"
+          "body" => $messges
         )
       );
-
-print($message->sid);
+    
+      
     }
 }
