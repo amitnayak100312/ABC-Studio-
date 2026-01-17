@@ -15,15 +15,15 @@ class WhatsAppController extends Controller
         $messges = "Hello Cheking msg";
         $twilio = new Client($twilioSid, $twilioToken);
         
-         $message = $twilio->messages
-      ->create($clientnumber, // to
-        array(
-          "from" => 'whatsapp:'.$clientnumber,
+         $message = $twilio->messages->create(
+            $clientnumber, // to
+    [
+        "from" => 'whatsapp:'.$clientnumber,
           "body" => $messges
-        )
+    ]
       );
     
-      return response()->json(['message' => 'Whatsapp Message to done']);
+      return response()->json(['message' => 'Whatsapp Message to done'])
       
     }
 }
