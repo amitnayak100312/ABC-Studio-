@@ -15,7 +15,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach($messages as $msg)
+                    @foreach($msgreview as $msg)
                     <tr>
                         <td>{{ $msg->created_at->format('M d, Y') }}</td>
                         <td>
