@@ -14,6 +14,8 @@ Route::get('/', function () {
 
 // Route::view('/','components.header');
 
+
+//all controller
 Route::get('/viewClient', [MailController::class, 'viewMessages'])->name('view.client');
 Route::get('/viewreview', [MailController::class, 'viewReview']);
 Route::post('/admin/reply', [MailController::class, 'sendReply'])->name('admin.sendReply');
@@ -21,8 +23,6 @@ Route::get('/admin/messages', [MailController::class, 'viewMessages'])->name('ad
 Route::post('send-mail',[MailController::class,'mailApp']);
 Route::get('/review', [ReviewController::class, 'index'])->name('reviews.index');
 Route::post('/reviews', [ReviewController::class, 'store'])->name('reviews.store');
-
-
 
 //all back-end view
 Route::view('/addContent','back-end.addContent');
