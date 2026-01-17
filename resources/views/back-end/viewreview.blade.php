@@ -20,7 +20,7 @@
                         <td>{{ $msg->created_at->format('M d, Y') }}</td>
                         <td>
                             <span class="client-name">{{ $msg->name }}</span>
-                            <span class="client-email">{{ $msg->email }}</span>
+                            <span class="client-email">{{ $msg->company_name }}</span>
                         </td>
                         <td>{{ $msg->subject }}</td>
                         <td>{{ Str::limit($msg->message, 40) }}</td>
