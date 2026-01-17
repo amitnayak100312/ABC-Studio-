@@ -270,6 +270,8 @@
     @include('back-end.sidebar')
     @yield('content')
     @yield('viewClient')
+    @yield('viewClient')
+    
 
 </body>
 
