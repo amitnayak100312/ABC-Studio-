@@ -11,12 +11,12 @@
                     <tr>
                         <th>Client Name</th>
                         <th>Message</th>
-                        {{-- <th>Action</th> --}}
+                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
-                    {{-- @foreach($messages as $msg) --}}
-                    {{-- <tr>
+                    @foreach($messages as $msg)
+                    <tr>
                         <td>{{ $msg->created_at->format('M d, Y') }}</td>
                         <td>
                             <span class="client-name">{{ $msg->name }}</span>
@@ -29,16 +29,16 @@
                                 Reply
                             </button>
                         </td>
-                    </tr> --}}
-                    {{-- @endforeach --}}
+                    </tr>
+                    @endforeach
                     
-                    {{-- @if($messages->isEmpty())
+                    @if($messages->isEmpty())
                     <tr>
                         <td colspan="5" style="text-align: center; padding: 30px; color: #999;">
                             No messages found.
                         </td>
                     </tr>
-                    @endif --}}
+                    @endif
                 </tbody>
             </table>
         </div>
