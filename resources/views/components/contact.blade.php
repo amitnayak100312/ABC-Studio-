@@ -154,28 +154,28 @@
                 </div>
 
             </div>
+            <div class="w-full max-w-5xl mx-auto mt-8 px-4 sm:px-6 lg:px-8">
+        <div class="relative overflow-hidden rounded-2xl shadow-xl border-4 border-orange-100">
+            <iframe 
+                class="w-full h-[400px] md:h-[500px]"
+                src="https://maps.google.com/maps?q=108,+Exceluss+Business+Space,+Althan,+Surat&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                frameborder="0" 
+                scrolling="no" 
+                marginheight="0" 
+                marginwidth="0" 
+                allowfullscreen>
+            </iframe>
         </div>
-        <div class="w-full max-w-5xl mx-auto mt-8 px-4 sm:px-6 lg:px-8">
-    <div class="relative overflow-hidden rounded-2xl shadow-xl border-4 border-orange-100">
-        <iframe 
-            class="w-full h-[400px] md:h-[500px]"
-            src="https://maps.google.com/maps?q=108,+Exceluss+Business+Space,+Althan,+Surat&t=&z=15&ie=UTF8&iwloc=&output=embed"
-            frameborder="0" 
-            scrolling="no" 
-            marginheight="0" 
-            marginwidth="0" 
-            allowfullscreen>
-        </iframe>
+        
+        <div class="text-center mt-6">
+            <a href="https://www.google.com/maps/search/?api=1&query=108,+Exceluss+Business+Space,+Althan,+Surat" 
+               target="_blank"
+               class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-orange-600 hover:bg-orange-700 transition-colors shadow-lg shadow-orange-600/30">
+                <i class="fa-solid fa-location-arrow mr-2"></i> Get Directions
+            </a>
+        </div>
     </div>
-    
-    <div class="text-center mt-6">
-        <a href="https://www.google.com/maps/search/?api=1&query=108,+Exceluss+Business+Space,+Althan,+Surat" 
-           target="_blank"
-           class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-orange-600 hover:bg-orange-700 transition-colors shadow-lg shadow-orange-600/30">
-            <i class="fa-solid fa-location-arrow mr-2"></i> Get Directions
-        </a>
-    </div>
-</div>
+        </div>
     </section>
 
     @include('components.footer')
