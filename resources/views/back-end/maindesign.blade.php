@@ -165,40 +165,46 @@
         
         /* --- ADD CONTENT FORM STYLES --- */
 
-/* Title styling */
+/* 1. Title Styling with Icon */
 .card-title {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
     color: var(--text-dark);
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     padding-bottom: 15px;
     border-bottom: 2px solid #f0f0f0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .card-title i {
     color: var(--primary-orange);
-    margin-right: 10px;
+    background: #fff0e6; /* Light orange bg for icon */
+    padding: 10px;
+    border-radius: 8px;
 }
 
-/* Form Grid System */
+/* 2. The Grid Layout */
 .form-row {
     display: flex;
-    gap: 20px; /* Space between columns */
-    margin-bottom: 15px;
+    flex-wrap: wrap; /* Allows items to drop to the next line */
+    gap: 25px;       /* Space between inputs */
 }
 
-/* Form Group */
+/* 3. Individual Input Groups */
 .form-group {
-    flex: 1; /* Makes inputs take equal width */
+    flex: 1 1 45%;   /* Default: Take up about half width */
     display: flex;
     flex-direction: column;
+    min-width: 300px; /* Prevent getting too small on mobile */
 }
 
-/* Full Width for Message/Image */
+/* 4. Force Full Width for Description & Image */
 .full-width {
-    flex: 100%;
+    flex: 1 1 100%;
 }
 
-/* Labels */
+/* 5. Labels */
 .form-group label {
     font-size: 14px;
     font-weight: 600;
@@ -206,63 +212,55 @@
     color: #444;
 }
 
-/* Inputs & Selects */
+/* 6. Inputs, Selects, and Textareas */
 .form-group input, 
 .form-group select, 
 .form-group textarea {
-    padding: 12px 15px;
+    padding: 12px 16px;
     border: 1px solid #ddd;
-    border-radius: 6px;
+    border-radius: 8px;
     font-size: 14px;
+    background-color: #fafafa;
     transition: all 0.3s ease;
-    background: #fafafa;
+    width: 100%;
 }
 
+/* Taller box for Description */
 .form-group textarea {
-    height: 120px; /* Taller for description */
+    min-height: 120px;
     resize: vertical;
 }
 
-/* Focus Effect */
+/* 7. Active/Focus State (The Orange Glow) */
 .form-group input:focus, 
 .form-group select:focus, 
 .form-group textarea:focus {
     border-color: var(--primary-orange);
-    background: #fff;
+    background-color: #fff;
     outline: none;
-    box-shadow: 0 0 0 3px rgba(255, 107, 0, 0.1);
+    box-shadow: 0 0 0 4px rgba(255, 107, 0, 0.1); /* Soft orange glow */
 }
 
-/* Save Button */
+/* 8. The Save Button */
 .btn-save {
     background-color: var(--primary-orange);
     color: white;
+    border: none;
+    padding: 14px 30px;
     font-size: 16px;
     font-weight: 600;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background 0.3s;
+    margin-top: 20px;
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    margin-top: 10px;
+    transition: background 0.3s, transform 0.2s;
 }
 
 .btn-save:hover {
-    background-color: #e65100; /* Darker Orange */
-}
-
-/* Mobile Responsiveness for Form */
-@media (max-width: 768px) {
-    .form-row {
-        flex-direction: column; /* Stack inputs on mobile */
-        gap: 0;
-    }
-    .form-group {
-        margin-bottom: 15px;
-    }
+    background-color: #e65100; /* Darker orange */
+    transform: translateY(-2px); /* Slight lift effect */
 }
     </style>
 </head>
