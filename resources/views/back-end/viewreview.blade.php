@@ -20,9 +20,9 @@
                         <td>{{ $msg->created_at->format('M d, Y') }}</td>
                         <td>
                             <span class="client-name">{{ $msg->name }}</span>
-                            <span class="client-email">{{ $msg->company_name }}</span>
+                            <span class="client-company_name">{{ $msg->company_name }}</span>
                         </td>
-                        <td>{{ $msg->subject }}</td>
+                        <td>{{ $msg->service_type }}</td>
                         <td>{{ Str::limit($msg->message, 40) }}</td>
                         <td>
                             <button class="btn-reply" onclick="openReplyModal('{{ $msg->email }}', '{{ $msg->subject }}')">
