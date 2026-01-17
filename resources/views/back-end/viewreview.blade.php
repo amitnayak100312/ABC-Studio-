@@ -12,7 +12,7 @@
                         <th>Client Name</th>
                         <th>Message</th>
                         <th>Company Name</th>
-                        <th>Action</th>
+                        <th>Review</th>
                     </tr>
                 </thead>
                 <tbody>
