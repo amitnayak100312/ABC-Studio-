@@ -18,7 +18,7 @@
                 </thead>
                 <tbody>
                     {{-- @foreach($messages as $msg) --}}
-                    <tr>
+                    {{-- <tr>
                         <td>{{ $msg->created_at->format('M d, Y') }}</td>
                         <td>
                             <span class="client-name">{{ $msg->name }}</span>
@@ -31,67 +31,19 @@
                                 Reply
                             </button>
                         </td>
-                    </tr>
-                    @endforeach
+                    </tr> --}}
+                    {{-- @endforeach --}}
                     
-                    @if($messages->isEmpty())
+                    {{-- @if($messages->isEmpty())
                     <tr>
                         <td colspan="5" style="text-align: center; padding: 30px; color: #999;">
                             No messages found.
                         </td>
                     </tr>
-                    @endif
+                    @endif --}}
                 </tbody>
             </table>
         </div>
     </div>
-
-    <div id="replyModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h3 style="margin-bottom: 20px;">Reply to Client</h3>
-            
-            <form action="{{ route('admin.sendReply') }}" method="POST">
-                @csrf
-                
-                <label>To:</label>
-                <input type="email" name="email" id="modal-email" readonly style="background: #f9f9f9; color: #777;">
-                
-                <input type="hidden" name="original_subject" id="modal-subject-hidden">
-                
-                <label>Subject:</label>
-                <input type="text" id="modal-subject-display" disabled style="background: #f9f9f9;">
-
-                <label>Message:</label>
-                <textarea name="reply_message" rows="5" placeholder="Type your response..." required></textarea>
-
-                <button type="submit" class="btn-submit">Send Reply</button>
-            </form>
-        </div>
-    </div>
-
-    <script>
-        const modal = document.getElementById("replyModal");
-        const emailInput = document.getElementById("modal-email");
-        const subjectDisplay = document.getElementById("modal-subject-display");
-        const subjectHidden = document.getElementById("modal-subject-hidden");
-
-        function openReplyModal(email, subject) {
-            modal.style.display = "block";
-            emailInput.value = email;
-            subjectDisplay.value = "Re: " + subject;
-            subjectHidden.value = subject;
-        }
-
-        function closeModal() {
-            modal.style.display = "none";
-        }
-
-        // Close if clicking outside
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                closeModal();
-            }
-        }
-    </script>
+    
 @endsection
