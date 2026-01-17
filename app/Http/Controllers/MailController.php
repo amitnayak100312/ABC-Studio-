@@ -57,8 +57,8 @@ class MailController extends Controller
 
     public function viewReview()
     {
-        $messages = Review::orderBy('created_at', 'desc')->get();
-        return view('back-end.viewreview', compact('messages'));
+        $msgreview = Review::orderBy('created_at', 'desc')->get();
+        return view('back-end.viewreview', compact('msgreview'));
     }
     public function sendReply(Request $request)
     {
