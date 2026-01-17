@@ -2,10 +2,8 @@
 @extends('back-end.maindesign')
 @section('viewreview')
 <div class="main-content">
-    
         <div class="card">
             <h2>Inbox: Client Messages</h2>
-
             <table>
                 <thead>
                     <tr>
