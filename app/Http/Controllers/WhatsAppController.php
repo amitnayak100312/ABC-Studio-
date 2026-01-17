@@ -10,6 +10,7 @@ class WhatsAppController extends Controller
    public function sendmsg(){
         $twilioSid = env('TWILIO_SID');
         $twilioToken = env('TWILIO_AUTH_TOKEN');
-        $twilioNumber = e
+        $twilioNumber = env('TWILIO_WHATSAPP_FROM');
+        
     }
 }
