@@ -52,6 +52,11 @@ class MailController extends Controller
         return view('back-end.viewClient', compact('messages'));
     }
     
+    public function viewReview(){
+             $messages = MailEntry::orderBy('created_at', 'desc')->get();
+        return view('back-end.viewClient', compact('messages'));
+   
+    }
     public function sendReply(Request $request){
     $request->validate([
         'email' => 'required|email',
