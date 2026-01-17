@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\MailController;
+use App\Http\Controllers\WhatsAppController;
 use App\Http\Controllers\ReviewController;
 use App\Models\Review;
 
@@ -35,4 +36,4 @@ Route::view('/services','components.services');
 Route::view('/portfolio','components.portfolio');
 
 //WhatsApp Messages
-Route::get('/send-whatsapp-message',);
+Route::get('/send-whatsapp-message',[WhatsAppController::class,'sendmsg']);
