@@ -6,13 +6,13 @@ use App\Http\Controllers\MailController;
 use App\Http\Controllers\ReviewController;
 use App\Models\Review;
 
+
+//index pages  
 Route::get('/', function () {
     $reviews = Review::orderBy('created_at', 'desc')->take(3)->get();
     return view('welcome', compact('reviews'));
-});
+    });
 
-
-// Route::view('/','components.header');
 //all controller
 Route::get('/viewClient', [MailController::class, 'viewMessages'])->name('view.client');
 Route::get('/viewreview', [MailController::class, 'viewReview']);
@@ -28,7 +28,6 @@ Route::view('/dashboard','back-end.dashboard');
 Route::view('/viewreview','back-end.viewreview');
 
 //all page userside view
-
 Route::view('/review', 'components.review');
 Route::view('/contact','components.contact');
 Route::view('/about','components.aboutus2');
