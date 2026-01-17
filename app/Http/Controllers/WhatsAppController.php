@@ -23,7 +23,7 @@ class WhatsAppController extends Controller
         )
       );
     
-      return respo
+      return response()->json(['message' => 'Whatsapp Message to done']);
       
     }
 }
