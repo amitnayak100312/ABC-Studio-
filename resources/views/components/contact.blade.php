@@ -68,7 +68,7 @@
                                 <p class="mt-1 text-gray-600">abhijit@abcstudio.in</p>
                             </div>
                         </div>
-                        
+
                         <div class="flex items-start">
                             <div class="flex-shrink-0">
                                 <div
@@ -154,6 +154,12 @@
                 </div>
 
             </div>
+
+            <iframe
+                src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=place_id:ChIJay3yQxxS4DsRsz4_gWvzlaM"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
     </section>
 
