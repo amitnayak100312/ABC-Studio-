@@ -11,6 +11,7 @@
                     <tr>
                         <th>Client Name</th>
                         <th>Message</th>
+                        <th>Company Name</th>
                         <th>Action</th>
                     </tr>
                 </thead>
