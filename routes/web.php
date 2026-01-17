@@ -29,3 +29,5 @@ Route::get('/admin/messages', [MailController::class, 'viewMessages'])->name('ad
 Route::post('send-mail',[MailController::class,'mailApp']);
 Route::get('/review', [ReviewController::class, 'index'])->name('reviews.index');
 Route::post('/reviews', [ReviewController::class, 'store'])->name('reviews.store');
+
+//WhatsApp Messages
