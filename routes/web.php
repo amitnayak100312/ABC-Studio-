@@ -16,6 +16,7 @@ Route::get('/', function () {
 
 Route::view('/addContent','back-end.addContent');
 Route::view('/dashboard','back-end.dashboard');
+Route::view('/viewreview',view.)
 Route::get('/viewClient', [MailController::class, 'viewMessages'])->name('view.client');
 Route::view('/review', 'components.review');
 Route::view('/contact','components.contact');
